@@ -58,7 +58,7 @@ const questions = [
             { ans: "`example", },
             { ans: "p.example", }
         ],
-        correct: '<example>'
+        correct: '`example'
     },
     {
         title: '5: Which property is used to change the background color of an element in CSS?',
