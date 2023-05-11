@@ -55,7 +55,7 @@ const questions = [
         questanswer: [
             { ans: "#example", },
             { ans: ".example", },
-            { ans: "<example>", },
+            { ans: "`example", },
             { ans: "p.example", }
         ],
         correct: '<example>'
@@ -72,7 +72,7 @@ const questions = [
 
     },
     {
-        title: '6: What is the purpose of the <script> tag in HTML?',
+        title: "6: What is the purpose of the script tag in HTML?",
         questanswer: [
             { ans: "To create links to external stylesheets", },
             { ans: "To add JavaScript code to a web page", },
