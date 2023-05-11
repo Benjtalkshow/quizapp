@@ -127,7 +127,6 @@ hr {
     padding: 15px;
     width: 8rem;
     border: none;
-    /* margin-left: 10px; */
 }
 #previous {
     background-color: red;
@@ -136,12 +135,6 @@ hr {
 .btn:nth-child(2) {
     background-color: #2e51ed;
 }
-/* .btn:nth-child(1) ,.btn:nth-child(4){
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    padding: 2px;
-} */
 .btn:nth-child(3) {
 background-color: darkgrey;
 }
