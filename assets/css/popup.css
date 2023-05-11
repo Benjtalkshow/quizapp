@@ -85,4 +85,28 @@ text-align: center;
         font-size: .7rem;
     }
 }
+@media only screen and (max-width: 768px) {
+    /* CSS for small screens */
+    .popupContainer {
+      width: 70%;
+      height: 80vh;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* CSS for medium screens */
+    .popupContainer {
+      width: 50%;
+      height: 70vh;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    /* CSS for large screens */
+    .popupContainer {
+      width: 40%;
+      height: 60vh;
+    }
+  }
+  
 /* End of pop Up.css */
