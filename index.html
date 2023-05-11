@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="linear-gradient(90deg, rgba(12, 156, 225, 1) 0%, rgba(60, 109, 254, 1) 56%);">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/4c55df3467.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>QUIZ WEB APP</title>
+</head>
+
+<body>
+    <div class="warning">!!Cannot Display On a Screen Size Less Than 300px!!</div>
+    <div class="removeBody">
+        <div class="navigation">
+            <div class="logo">QUIZ APP</div>
+            <ul class="topnav">
+                <li><a href="#" target="_blank"><i class="fa-solid fa-address-card"></i>My Portfolio</a>
+                </li>
+                <li><a href="https://github.com/Benjtalkshow" target="_blank"><i
+                            class="fa-brands fa-github"></i>Github</a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/nnaji-benjamin-542773182/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i>Linkdin</i></a></li>
+            </ul>
+            <div class="hamburger">
+                <li id="hamburger"> <i class="fa-solid fa-bars"></i>
+                 <li id="cancel">   <i class="fa-solid fa-x" style="color: #ffffff;"></i></li>
+                </div>
+        </div>
+        <section class="main">
+            <div class="description">
+                <h1 class="first-txt">Ultimate Online Quiz Project</h1>
+                <h1 id="second-txt">for newbies, <br> in FrontEnd development.</h1>
+                <p>QuizApp is fun, easy, and free. Join today and test your knowledge and skills.</p>
+                <div class="btns">
+                    <button class="firstbtn">Start Quiz</button>
+                    <button class="devbtn"><a href="#">Contribute as a Dev</a></button>
+                </div>
+        </section>
+        <div class="quiz-app">
+            <iframe src="/index.html" scrolling="none"></iframe>
+            <div class="quiz-background-left">
+                <img src="/assets/image/3.jpg" alt="write quiz">
+            </div>
+            <div class="quiz-background-right">
+                <div class="embedded">
+                </div>
+                <h1>Welcome To Quiz App</h1>
+                <p>Fill in your name in the input box below </p>
+                <p>and click on start</p>
+                <input type="text" placeholder="Enter your Name here..." class="entername">
+                <button class="startbtn">Start</button>
+            </div>
+        </div>
+        <div class="designedBy">
+            <p>Designed By <a href="https://www.linkedin.com/in/nnaji-benjamin-542773182/" target="_blank">Nnaji
+                    Benjamin</a>
+                One<i class="fa-solid fa-heart fa-shake" style="color: #ff0000;"></i></p>
+        </div>
+    </div>
+</body>
+<script src="/assets/js/start.js"></script>
+<script>
+    const firstBtn = document.querySelector('.firstbtn')
+    const inputName = document.querySelector('.entername')
+    firstBtn.addEventListener('click', () => {
+        inputName.scrollIntoView({ behavior: "smooth" })
+    })
+    firstBtn.addEventListener('submit', (e) => {
+        e.preventDefault();
+    })
+////////////////// DropDown Event ////////////////////////
+    var x = document.querySelector('#hamburger');
+    var y = document.querySelector('#cancel')
+    var z = document.querySelector('.topnav')
+    x.addEventListener('click', () => {
+        z.classList.add('active')
+        x.style.display = "none"
+        y.style.display = "block"
+    })
+    y.addEventListener('click', ()=>{
+        z.classList.remove('active')
+        x.style.display = "block"
+        y.style.display = "none"
+    })
+////////////////// DropDown Event End////////////////////////
+</script>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/quiz.css">
+
+    <title>App Quiz</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Quiz App</h1>
+        </div>
+        <div class="welcome">
+            <h2 id="welcomeMessage"></h2>
+            <h2 id="timing"></h2>
+        </div>
+        <div class="question-container">
+            <div class="question-div">
+                <h1 id="question"></h1>
+            </div>
+            <div class="answersCollection">
+                <div class="answer"></div>
+                <div class="answer"></div>
+                <div class="answer"></div>
+                <div class="answer"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="slide">
+            <div class="buttonList">
+                <button class="btn" id="previous">PREV</button>
+                <button class="btn" id="submit">Submit</button>
+                <button class="btn" id="logout">Log Out</button>
+                <button class="btn" id="next">NXT</button>
+            </div>
+            <div class="display">
+                <h4 class="failed">Failed:</h4>
+                <h4 class="passed">Passed:</h4>
+                <h4 class="total">Total:</h4>
+            </div>
+            <h1 id="congrats"></h1>
+        </div>
+
+    </div>
+
+    
+    <script src="/assets/js/app.js"></script>
+</body>
+
+</html>
