@@ -1,19 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-@font-face {
-    font-family: 'Poppins';
-    src: url(/Poppins/Poppins-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', 'Ubuntu Mono';
 }
 
 body {
-    background-color: #fff
+    background-color: #f5f5f5;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 /* Navigation styling codes */
@@ -93,7 +88,7 @@ ul li a i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    background-color: #f5f5f5;
     margin-bottom: 80px;
 }
 
@@ -102,7 +97,6 @@ ul li a i {
     text-align: center;
     font-weight: 900;
     font-size: 2.7rem;
-    font-family: 'Poppins', sans-serif;
 }
 
 #second-txt {
@@ -219,10 +213,12 @@ iframe {
     scroll-behavior: smooth;
     display: none;
 }
+
 .quiz-background-left,
 .quiz-background-right {
     display: block;
 }
+
 .quiz-background-right h1 {
     color: #fff;
     text-align: center;
@@ -344,16 +340,20 @@ iframe {
     ul li#hamburger {
         display: block;
     }
-.main .description .first-txt {
-    margin-top: 40px;
-    font-size: 2.2rem;
-}
-.main .description #second-txt {
-    font-size: 2rem;
-}
-.btns {
-    margin-top: 350px;
-}
+
+    .main .description .first-txt {
+        margin-top: 40px;
+        font-size: 2.2rem;
+    }
+
+    .main .description #second-txt {
+        font-size: 2rem;
+    }
+
+    .btns {
+        margin-top: 350px;
+    }
+
     .main .description p {
         font-size: 1rem;
     }
@@ -378,6 +378,7 @@ iframe {
     .logo {
         font-size: 1.5rem;
     }
+
     ul li#hamburger {
         display: block;
     }
@@ -385,9 +386,10 @@ iframe {
     .navigation {
         gap: 80px;
     }
+
     .main .description .first-txt {
-    padding-top: 60px;
-    font-size: 2rem;
+        padding-top: 60px;
+        font-size: 2rem;
     }
 
     .main .description #second-txt {

@@ -1,112 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
 /* Pop Up.css */
 .container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
+
 .popupbtn {
-    outline: none;
-    border: none;
-    background-color: #2e51ed;
-    color: #fff;
-    font-size: 20px;
-    padding: 1rem 4rem;
-    border-radius: 2rem;
-    cursor: pointer;
-    font-size: 15px;
+  outline: none;
+  border: none;
+  background-color: #2e51ed;
+  color: #fff;
+  font-size: 20px;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 15px;
 }
+
 .btn:hover {
-    background-color: #5b75e9;
+  background-color: #5b75e9;
 }
+
 .popupContainer {
-    position: absolute;
-    top: -10%;
-    width: 40%;
-    height: 60vh;
-    visibility: hidden;
-    transform: scale(0.1);
-    border: 2px solid #2e51ed;
-    border-radius: 1rem;
-    background-color: #fff;
-    padding: 1rem;
-    transition: all .4s linear;
-    display: flex;
-    flex-direction: column;
-    align-items:center ;
+  position: absolute;
+  top: -10%;
+  width: 40%;
+  height: 60vh;
+  visibility: hidden;
+  transform: scale(0.1);
+  border: 2px solid #2e51ed;
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  transition: all .4s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .popupActive {
-    top: 30%;
-    visibility: visible;
-    transform: scale(1.1);
+  top: 30%;
+  visibility: visible;
+  transform: scale(1.1);
 }
-.popupcontainer p, h2 {
-text-align: center;
+
+.popupcontainer p,
+h2 {
+  text-align: center;
 }
+
 #close {
-    width: 50%;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    padding: .6rem;
-    border-radius: 2rem;
-    border: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    color: #fff;
-    background-color: #2e51ed;
+  width: 50%;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: .6rem;
+  border-radius: 2rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2e51ed;
 }
+
 #close:hover {
-    color: #fff;
-    background-color: #5670e7;
+  color: #fff;
+  background-color: #5670e7;
 }
+
 #image {
-    width: 5rem;
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    top: -4rem;
-    background-color: #2e51ed;
-    border-radius: 50%;
+  width: 5rem;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: -4rem;
+  background-color: #2e51ed;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 720px) {
-    .popupContainer {
-        width: 100%;
-        height: 80vh;
-        margin-bottom: 50px;
-        font-size: 1rem;
-        word-wrap: break-word;
-    }
-    .popupContainer h1 {
-        font-size: .7rem;
-    }
+  .popupContainer {
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 50px;
+    font-size: 1rem;
+    word-wrap: break-word;
+  }
+
+  .popupContainer h1 {
+    font-size: .7rem;
+  }
 }
+
 @media only screen and (max-width: 768px) {
-    /* CSS for small screens */
-    .popupContainer {
-      width: 70%;
-      height: 80vh;
-    }
+
+  /* CSS for small screens */
+  .popupContainer {
+    width: 70%;
+    height: 80vh;
   }
-  
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* CSS for medium screens */
-    .popupContainer {
-      width: 50%;
-      height: 70vh;
-    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* CSS for medium screens */
+  .popupContainer {
+    width: 50%;
+    height: 70vh;
   }
-  
-  @media only screen and (min-width: 1024px) {
-    /* CSS for large screens */
-    .popupContainer {
-      width: 40%;
-      height: 60vh;
-    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  /* CSS for large screens */
+  .popupContainer {
+    width: 40%;
+    height: 60vh;
   }
-  
+}
+
 /* End of pop Up.css */
