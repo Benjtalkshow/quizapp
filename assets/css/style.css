@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url(/Poppins/GTWalsheimPro-Regular.ttf);
+
+:root {
+    --primaryColor: #2e51ed;
+}
 
 * {
     margin: 0;
@@ -7,8 +12,10 @@
 }
 
 body {
-    background-color: #f5f5f5;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(/assets/image/Hero-bg-1024x683.png);
+    background-position: center;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    background-attachment: fixed;
 }
 
 /* Navigation styling codes */
@@ -16,18 +23,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: rgb(12, 156, 225);
-    background: linear-gradient(90deg, rgba(12, 156, 225, 1) 0%, rgba(60, 109, 254, 1) 56%);
     width: 100%;
-    height: 10vh;
-    /* position: fixed; */
+    padding: 10px 0;
     z-index: 99;
+    position: absolute;
+    background-color: transparent;
 }
 
 .logo {
     font-size: 2rem;
     padding-bottom: 8px;
-    color: #fff
+    color: #2e51ed;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 ul {
@@ -40,10 +48,12 @@ ul li {
     padding-left: 2rem;
     font-size: 1.2rem;
     color: #fff;
+    margin-left: 5px;
 }
 
 ul li a {
     color: #fff;
+    background-color: #2e51ed;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -53,18 +63,20 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: #fff;
-    color: #000;
+    background: rgb(172, 9, 172);
+    transition: ease-in-out .5s;
 }
 
 ul li a i {
     font-size: 1rem;
-    color: rgb(240, 240, 240);
+    /* color: rgb(240, 240, 240); */
+    color: #fff;
 }
 
 .hamburger {
     display: none;
     z-index: 99;
+    color: #2e51ed;
 }
 
 #hamburger {
@@ -81,41 +93,42 @@ ul li a i {
     display: none;
 }
 
+.main {
+    position: relative;
+}
+
 .main .description {
     width: 100%;
-    height: 60vh;
-    border-bottom: 2px solid rgb(209, 202, 202);
+    padding-top: 5em;
+    /* border-bottom: 2px solid rgb(209, 202, 202); */
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f5f5f5;
-    margin-bottom: 80px;
+    /* background-color: #f5f5f5; */
 }
 
-.main .description h1 {
-    padding-top: 80px;
+.main .description #first-txt {
+    font-size: 3.5rem;
+    margin-top: 50px;
     text-align: center;
-    font-weight: 900;
-    font-size: 2.7rem;
+    line-height: .9;
 }
 
-#second-txt {
-    padding-top: 6px;
+.main .description #second-txt {
+    font-size: 2rem;
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: lighter;
+}
+
+#second-txt span {
+    color: #2e51ed;
 }
 
 .main .description p {
-    padding-top: 20px;
     text-align: center;
-    color: #2e51ed;
-    font-weight: 700;
-    font-size: 1.2rem;
 }
 
 .btns {
-    margin-top: 360px;
+    margin-top: 250px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -140,7 +153,7 @@ ul li a i {
     width: 10rem;
     font-size: large;
     border: none;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     color: #fff;
     background-color: #2e51ed;
     cursor: pointer;
@@ -151,7 +164,7 @@ ul li a i {
     width: 15rem;
     font-size: large;
     border: 2px solid #2e51ed;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background: transparent;
     cursor: pointer;
     color: #fff;
@@ -165,12 +178,12 @@ ul li a i {
 
 /* The main quiz app */
 .quiz-app {
-    margin: auto;
+    margin: 15em auto;
     width: 70%;
-    height: 80vh;
+    /* height: 80vh; */
     border-radius: 5px;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.555);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,6 +196,7 @@ ul li a i {
     width: 50%;
     height: 80vh;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .quiz-app .quiz-background-left img {
@@ -191,8 +205,8 @@ ul li a i {
     transition: transform 0.3s;
 }
 
-.quiz-background-left img:hover {
-    transform: scale(1.01);
+.quiz-background-left:hover img {
+    transform: scale(1.1);
     box-shadow: 0 0 10px #2e51ed;
 }
 
@@ -262,7 +276,6 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2e51ed;
     border: none;
     height: 10vh;
 }
@@ -273,7 +286,7 @@ iframe {
 }
 
 .designedBy p {
-    color: #fff;
+    color: #2e51ed;
     font-size: 1.2rem;
 }
 
@@ -309,20 +322,20 @@ iframe {
 
 
     ul.active {
-        background: linear-gradient(90deg, rgba(12, 156, 225, 1) 0%, rgba(60, 109, 254, 1) 56%);
         display: flex;
-        height: 100vh;
+        height: 40vh;
         width: 100%;
         position: fixed;
-        top: 0;
+        backdrop-filter: blur(5px);
+        /* top: 0; */
         margin-top: 71px;
         left: 0;
         z-index: 30;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* border-top: 1px solid rgb(209, 202, 202);
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.253); */
+        /* border-top: 1px solid rgb(209, 202, 202); */
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.253);
     }
 }
 
@@ -331,19 +344,30 @@ iframe {
         gap: 200px;
     }
 
+    ul {
+        padding-top: 5rem;
+    }
+    ul li a:hover {
+        background:rgb(172, 9, 172);
+        transition: ease-in-out .5s;
+    }
     ul li {
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
+    }
 
+    ul li a {
+        background-color: #2e51ed;
     }
 
     ul li#hamburger {
         display: block;
     }
 
-    .main .description .first-txt {
+    .main .description #first-txt {
         margin-top: 40px;
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 
     .main .description #second-txt {
@@ -351,7 +375,7 @@ iframe {
     }
 
     .btns {
-        margin-top: 350px;
+        margin-top: 250px;
     }
 
     .main .description p {
@@ -378,6 +402,12 @@ iframe {
     .logo {
         font-size: 1.5rem;
     }
+    ul {
+        padding-top: 5rem;
+    }
+    ul li {
+        margin-top: 10px;
+    }
 
     ul li#hamburger {
         display: block;
@@ -387,9 +417,9 @@ iframe {
         gap: 80px;
     }
 
-    .main .description .first-txt {
-        padding-top: 60px;
-        font-size: 2rem;
+    .main .description #first-txt {
+        padding-bottom: 5px;
+        font-size: 2.5rem;
     }
 
     .main .description #second-txt {
@@ -426,7 +456,6 @@ iframe {
         width: 100%;
         height: 50vh;
     }
-
     .quiz-app .quiz-background-right {
         width: 100%;
     }
